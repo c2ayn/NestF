@@ -1,4 +1,4 @@
-import { getCaptchaCode, login, registry } from '@/apis/login'
+import { getCaptchaCode, login, registry } from '@/apis/login' 
 import { ComponTypeEnum } from '@/layout/BasicLayout'
 import { storeGlobalUser } from '@/store/globalUser'
 import { storage } from '@/utils/Storage'
@@ -21,7 +21,7 @@ import { useNavigate } from 'react-router-dom'
 import logo from '@/assets/mouse.jpg'
 
 const Registry = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate() //导航函数
   const formRef = useRef<ProFormInstance>()
   const backToLogin = () => {
     navigate('/login')
